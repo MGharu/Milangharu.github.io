@@ -1,0 +1,462 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    list-style:  none;
+    margin: 20px 0px;
+}
+.navbar ul li{
+    font-family: century;
+    font-size: 15px;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color:white;
+    padding: 8px 25px;
+    transition: all 0.6s ease;
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+
+/*home section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    background-color:rgba(0, 0, 0, 0.5) ;
+    height: 900px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    columns: white;
+}
+#home::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url("milan.jpg") no-repeat center center/cover;
+    height: 972px;
+    width: 100%;
+    z-index: -1;
+    opacity:0.8;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+.headings{
+    font-family:century ;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+.btn{
+    padding: 10px 35px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    outline: none;
+    transition: 0.6 ease;
+}
+.btn:hover{
+    cursor: pointer;
+    background-color: rgb(173, 171, 171);
+    color: black;
+    box-shadow: 0 0 5px lightgrey, 0 0 10px lightgrey, 0 0 15px lightgray;
+    font-weight: bold;
+} 
+/* about section*/
+
+#about{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 15px;
+    
+    background:rgba(0, 0, 0, 0.5) ;
+
+}
+#pic{
+    display: flex;
+}
+#pic img{
+    width: 280px;
+    height: 420px;
+}
+#intro{
+    display:flex ;
+    flex-direction: column;
+    text-align: justify;
+    padding: 10px;
+
+}
+#intro h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.head{
+    font-family: century;
+    /* font-size: 3rem; */
+    text-align: left;
+    margin: 1px -15px;
+    background:rgba(0, 0, 0, 0.5) ;
+    margin-top: -16px;
+    padding: 50px;
+}
+.paras{
+    margin: 10px;
+}
+.paras2{
+    margin: 10px;
+}
+.info{
+    display:flex;
+    
+}
+li{
+    margin-bottom: 15px;
+}
+
+#Skills{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 15px;
+    
+    background:rgba(0, 0, 0, 0.5) ;
+
+}
+.my-skills{
+    width: 755px;
+    margin: 10px ;
+    color: black;
+    
+    list-style: none;
+}
+.my-skills li{
+    margin: 20px 0px;
+}
+.bar{
+    background: #353b48;
+    display: block;
+    height: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 0 0 10px lightgray;
+   
+}
+.bar span{
+    height: 10px;
+    float: left;
+    background: wheat;
+}
+.html{
+    width: 75%;
+    animation: html 2s;
+}
+.css{
+    width: 75%;
+    animation: css 2s;
+}
+.javascript{
+    width: 30%;
+    animation: javascript 2s;
+}
+.c{
+    width: 50%;
+    animation: c 2s;
+}
+.python{
+    width: 60%;
+    animation: python 2s;
+}
+.r{
+    width: 65%;
+    animation: r 2s;
+}
+.wordpress{
+    width: 50%;
+    animation: wordpress 2s;
+}
+.sql{
+    width: 79%;
+    animation: sql 2s;
+}
+
+
+@keyframes html{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+
+@keyframes css{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+
+@keyframes javascript{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 30%;
+    }
+}
+
+@keyframes c{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}@keyframes python{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 60%;
+    }
+}
+@keyframes r{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 65%;
+    }
+}
+@keyframes wordpress{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 50%;
+    }
+}
+@keyframes sql{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 79%;
+    }
+}
+
+.heads{
+    padding: 50px;
+    background: rgba(41, 41, 41, 0.75);
+   
+}
+.image{
+    
+}
+.image img{
+    width: 30px;
+    height: 30px;
+    background: black;
+     
+}
+#Service{
+    height: 70vh;
+    list-style: none;
+    flex-direction: row;
+    background: rgb(139, 137, 133);
+    
+}
+.services{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+   
+    
+}
+.indono{
+    display: flex;
+    margin: 10px;
+    
+}
+.ul{
+    margin-top: 10px;
+}
+.ul ul{
+    width: 322px;
+    list-style-type: none;
+    padding-inline-start: 13px;
+    padding-inline-end:53px ;
+}
+h7{
+    
+    margin: 37px;
+    
+}
+.pagal{
+    padding: 23px 3px;
+    padding-bottom: 26px;
+    padding-top: 0px;
+    
+   
+}
+#contact{
+    
+    height: 50vh;
+    list-style: none;
+    flex-direction: row;
+    background: rgb(139, 137, 133);
+}
+.sara{
+    display: flex;
+}
+iframe{
+    width: 750px;
+    height: 200px;
+}
+.puraek{
+    margin-left: 10px;
+    
+}
+#ckt{
+    height: 70vh;
+    list-style: none;
+    padding-top: 30px;
+    background: rgb(139, 137, 133);
+}
+#ckt h8{
+    font-size: 21px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.farm{
+    margin-bottom: 100px;
+    margin: 0px 219px;
+}
+input{
+    padding-left: 2px;
+    margin-bottom: 10px;
+}
+input::placeholder{
+    justify-content: center;
+}
+.farm-input{
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid gray;
+    border-radius: 6px;
+    margin: 20px;
+}
+.farm .btn{
+    margin: 23px;
+}
+.ftr{
+    height: 15vh;
+    list-style: none;
+    
+    background: rgb(63, 63, 63);
+}
+.text-footer{
+    text-align: center;
+    padding: 30px 0px;
+    font-family:'Ubuntu' sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+@media (max-width: 768px) {
+    .navbar ul{
+        flex-wrap: wrap;
+    }
+    #home{
+        justify-content: center;
+    }
+    #home::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: url("crop.jpg") no-repeat center center/cover;
+        height: 972px;
+        width: 100%;
+        z-index: -1;
+        opacity:0.8;
+    }
+  
+    #pic{
+        flex-direction: column;
+        height: auto;
+        width: auto;
+        
+    }
+    #pic img{
+        margin: auto;
+    }
+    .info{
+        display: flex;
+        
+        
+        height: auto;
+    }
+    .my-skills{
+        width: auto;
+    }
+    
+    #Service{
+        height: auto;
+    }
+    .sara{
+        width: auto;
+    }
+    #contact{
+        height: auto;
+    }
+    iframe{
+        width: 100%;
+        
+        
+    }
+    .farm{
+        margin: 5px 105px;
+        margin-left: 0px;
+    }
+    #ckt{
+        height: auto;
+    }
+
+}
+
